@@ -33,6 +33,7 @@ public class FruitAdapter extends RecyclerView.Adapter<FruitAdapter.ViewHolder>{
         holder.imageView.setImageResource(fruit.getImage());
         holder.nameView.setText(fruit.getName());
         holder.descriptionView.setText(fruit.getDescription());
+        holder.statusView.setText(fruit.getStatus());
     }
 
     @Override
@@ -42,12 +43,13 @@ public class FruitAdapter extends RecyclerView.Adapter<FruitAdapter.ViewHolder>{
 
     public static class ViewHolder extends RecyclerView.ViewHolder {
         final ImageView imageView;
-        final TextView nameView, descriptionView;
+        final TextView nameView, descriptionView, statusView;
         ViewHolder(View view){
             super(view);
             imageView = (ImageView)view.findViewById(R.id.image);
             nameView = (TextView) view.findViewById(R.id.name);
             descriptionView = (TextView) view.findViewById(R.id.description);
+            statusView  = (TextView) view.findViewById(R.id.status);
         }
     }
 }

@@ -27,11 +27,11 @@ public class MainActivity extends AppCompatActivity {
         recyclerView.setAdapter(adapter);
     }
     private void setInitialData(){
-        fruits.add(new Fruit ("Лимон", "Помогает при старости", R.drawable.lemon));
-        fruits.add(new Fruit ("Киви", "это не то киви! пожалучта уберите это отсюда!", R.drawable.qiwi));
-        fruits.add(new Fruit ("Яблоко", "Красный снаружи, котик внутри", R.drawable.apple));
-        fruits.add(new Fruit ("Ананас", "Этот мужчина предлагает вам Ананас. Примешь ли ты его предложение?", R.drawable.pinapple));
-
+        fruits.add(new Fruit ("Велосипед Ridley Orion",getResources().getString(R.string.desc1), R.drawable.busekle1, getResources().getString(R.string.avalable)));
+        fruits.add(new Fruit ("Pro-Lite Trentino Track Bike", getResources().getString(R.string.desc2), R.drawable.busekle1, getResources().getString(R.string.avalable)));
+        fruits.add(new Fruit ("Велосипед Zycle PRIME Fix", getResources().getString(R.string.desc3), R.drawable.busekle1, getResources().getString(R.string.unavalable)));
+        fruits.add(new Fruit ("Northug Gold", getResources().getString(R.string.desc4), R.drawable.northerngold, getResources().getString(R.string.avalable)));
+        fruits.add(new Fruit ("Northug Silver", getResources().getString(R.string.desc5), R.drawable.northerngold, getResources().getString(R.string.unavalable)));
     }
 
     public void showToast(View view) {
@@ -39,7 +39,7 @@ public class MainActivity extends AppCompatActivity {
         TextView textView = (TextView)view.findViewById(R.id.name);
         String text = textView.getText().toString();
         Toast toast = Toast.makeText(getApplicationContext(),
-                "Выбрано: "+ text, Toast.LENGTH_SHORT);
+                "Добавлено в корзину: "+ text, Toast.LENGTH_SHORT);
         toast.show();
     }
 }

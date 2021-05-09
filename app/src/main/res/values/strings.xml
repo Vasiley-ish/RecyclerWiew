@@ -1,3 +1,11 @@
 <resources>
     <string name="app_name">RecyclerViewDebica(TM)</string>
+    <string name="desc1">Шоссейный велосипед Ridley Orion Edition</string>
+    <string name="desc2">Велосипед трековый Pro-Lite Trentino Track Bike</string>
+    <string name="desc3">Трековый велосипед Zycle PRIME Fix Gray size (ML) 55</string>
+    <string name="desc4">Очки Northug Gold Performance</string>
+    <string name="desc5">Очки Northug Silver Performance</string>
+
+    <string name="avalable">Свободен</string>
+    <string name="unavalable">Занят</string>
 </resources>
